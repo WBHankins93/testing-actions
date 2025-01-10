@@ -3,5 +3,3 @@ function greet(name) {
 }
 
 console.log(greet('Github Actions'));
-
-module.exports = greet;

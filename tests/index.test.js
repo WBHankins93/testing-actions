@@ -1,4 +1,4 @@
-import greet from "./index.js";
+import greet from "..index.js";
 
 test('prints Hello, Github Actions!', () => {
     console.log = jest.fn();
