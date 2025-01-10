@@ -1,5 +1,9 @@
-test('prints Hello, World!', () => {
+test('prints Hello, Github Actions!', () => {
     console.log = jest.fn();
-    require('../index');
-    expect(console.log).toHaveBeenCalledWith('Hello, World!');
+    greet('Github Actions');
+    expect(console.log).toHaveBeenCalledWith('Hello, Github Actions!');
+  });
+
+  test('greet function', () => {
+    expect(greet('World')).toBe('Hello, World');
   });
